@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {FlatList, Text, View, StatusBar, StyleSheet} from 'react-native';
-import FloatHeaderScrollView from './FloatHeaderScrollView';
+import FloatHeaderScrollView from 'react-native-float-header';
 
 export default class App extends React.PureComponent {
   renderItem = ({item}) => (
