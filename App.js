@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {FlatList, Text, View, StatusBar, StyleSheet} from 'react-native';
-import FloatHeaderScrollView from 'react-native-float-header';
+import FloatHeaderScrollView from './FloatHeaderScrollView';
 
 export default class App extends React.PureComponent {
   renderItem = ({item}) => (
@@ -15,7 +15,9 @@ export default class App extends React.PureComponent {
     return (
       <>
         <StatusBar translucent />
-        <Text style={styles.header}>首页</Text>
+        <View style={styles.header}>
+          <Text style={styles.title}>首页</Text>
+        </View>
         <View style={{flex: 1, overflow: 'hidden'}}>
           <FloatHeaderScrollView
             renderFloatHeader={this.renderFloatHeader}
@@ -36,12 +38,10 @@ export default class App extends React.PureComponent {
 
 const styles = StyleSheet.create({
   header: {
-    marginTop: 25, 
-    height: 44,
-    fontSize: 18, 
-    lineHeight: 44,
-    fontWeight: '900',
-    textAlign: 'center',
+    paddingTop: 25, 
+    height: 70,
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#fff',
     ...Platform.select({
       ios: {
@@ -55,5 +55,9 @@ const styles = StyleSheet.create({
         position: 'relative',
       },
     }),
-  }
+  },
+  title: {
+    fontSize: 18, 
+    fontWeight: '900',
+  },
 });
