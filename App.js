@@ -20,9 +20,7 @@ export default class App extends React.PureComponent {
           <FloatHeaderScrollView
             renderFloatHeader={this.renderFloatHeader}
             ScrollComponent={FlatList}
-            data={Array(60)
-              .fill('')
-              .map((v, i) => i)}
+            data={Array(60).fill('').map((v, i) => i)}
             renderItem={this.renderItem}
             keyExtractor={(item, index) => `${item.id}-${index}`}
             refreshControl={{
