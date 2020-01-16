@@ -25,3 +25,5 @@ yarn add react-native-float-header
 
 
 <img src="https://github.com/17554265585/react-native-float-header/blob/master/demo.gif">
+
+另外寻求兼容ios和安卓的多tab吸顶方案，效果如淘宝ios端首页
