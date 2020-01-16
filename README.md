@@ -5,9 +5,9 @@
 ```shell
 yarn add react-native-float-header
 ```
+使用方法参考`App.js`
 
-参考来源
-<a>https://github.com/rgommezz/reanimated-collapsible-navbar</a>
+参考来源<a>https://github.com/rgommezz/reanimated-collapsible-navbar</a>
 
 源码`FloatHeaderScrollView.js`中包含了处理ios端自定义刷新头位置的问题
 1. 使用`contentInset`设置刷新头位置，如
