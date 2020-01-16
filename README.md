@@ -7,4 +7,4 @@ yarn add react-native-float-header
 ```
 
 效果如图
-<img src="https://github.com/17554265585/react-native-float-header/demo.gif">
+<img src="https://github.com/17554265585/react-native-float-header/blob/master/demo.gif">
