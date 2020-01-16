@@ -21,6 +21,7 @@ yarn add react-native-float-header
     animated: false,
   });
 ```
-该插件会在手势松开后将浮动头部完全展开或收起，不会出现头部只有部分展示的情况
-效果如图<br>
+该插件会在手势松开后将浮动头部完全展开或收起，不会出现头部只有部分展示的情况，效果如图
+
+
 <img src="https://github.com/17554265585/react-native-float-header/blob/master/demo.gif">
