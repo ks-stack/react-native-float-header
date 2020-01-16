@@ -3,13 +3,9 @@ import {FlatList, Text, View, StatusBar, StyleSheet} from 'react-native';
 import FloatHeaderScrollView from './FloatHeaderScrollView';
 
 export default class App extends React.PureComponent {
-  renderItem = ({item}) => (
-    <Text style={{color: '#000', fontSize: 20, margin: 15}}>{item}</Text>
-  );
+  renderItem = ({item}) => <Text style={{color: '#000', fontSize: 20, margin: 15}}>{item}</Text>
 
-  renderFloatHeader = () => (
-    <View style={{height: 180, backgroundColor: '#E91E63'}} />
-  );
+  renderFloatHeader = () => <View style={{height: 180, backgroundColor: '#E91E63'}} />
 
   render() {
     return (

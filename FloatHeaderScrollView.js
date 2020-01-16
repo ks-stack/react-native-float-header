@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, StyleSheet, Platform, RefreshControl} from 'react-native';
+import {StyleSheet, Platform, RefreshControl} from 'react-native';
 import Animated from 'react-native-reanimated';
 
 const {
@@ -175,7 +175,7 @@ export default class FloatHeaderScrollView extends React.PureComponent {
     const {paddingTop} = this.state;
     const AnimatedScrollComponent = this.AnimatedScrollComponent;
     return (
-      <View style={styles.container}>
+      <>
         {paddingTop && (
           <AnimatedScrollComponent
             {...this.props}
@@ -232,15 +232,12 @@ export default class FloatHeaderScrollView extends React.PureComponent {
           ]}>
           {renderFloatHeader()}
         </Animated.View>
-      </View>
+      </>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   header: {
     position: 'absolute',
     top: 0,
